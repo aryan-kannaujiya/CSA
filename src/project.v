@@ -6,12 +6,14 @@
 `define default_netname none
 
 module tt_um_carry_select(  
-    input wire [3:0] A,
-     input wire [3:0] B,
+    input wire [3:0] ui_in(A),
+    input wire [3:0] ui_in(B),
+    input  wire [7:0] uio_in,   // IOs: Input path
+    output wire [7:0] uio_out,  // IOs: Output path
     input clk,
-     input wire cin,
-     output wire [3:0] S,
-     output wire cout
+    input wire ui_in(cin),
+    output wire [3:0] uo_out(S),
+    output wire uo_out(cout)
             );
         
 wire [3:0] temp0,temp1,carry0,carry1;
