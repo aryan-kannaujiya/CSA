@@ -11,7 +11,7 @@ module tt_um_carry_select(
     input clk,
      input wire cin,
      output wire [3:0] S,
-     output wire cout
+     output reg cout
             );
         
 wire [3:0] temp0,temp1,carry0,carry1;
