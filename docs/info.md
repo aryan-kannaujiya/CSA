@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+A 4-bit carry-select adder is a compact digital circuit capable of adding two 4-bit binary numbers with reduced propagation delay, utilizing parallel processing to achieve high-speed arithmetic operations in computer systems
 
 ## How to test
 
-Explain how to use your project
+By applying two four-bit digital logics and one carry at the inputs it will provide the sum and carry as output.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+four LEDs representing the four bits for each inputs, carry and output.
