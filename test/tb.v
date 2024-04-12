@@ -14,13 +14,11 @@ module tb ();
 
   // Wire up the inputs and outputs:
   reg clk;
-  reg rst_n;
-  reg ena;
-   reg [3:0] ui_in;
-   reg [3:0] uio_in;
-   wire [3:0] uo_out;
-   wire [3:0] uio_out;
-   wire [3:0] uio_oe;
+   reg [3:0] A;
+   reg [3:0] B;
+   reg [1:0] cin;
+   wire [3:0] S;
+   wire [1:0] cout;
 
   // Replace tt_um_example with your module name:
   tt_um_carry_select user_project (
