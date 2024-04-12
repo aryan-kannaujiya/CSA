@@ -29,7 +29,7 @@ module tb ();
       .VGND(1'b0),
 `endif
 
-     .ui_in  (A),    // Dedicated inputs
+     .A,    // Dedicated inputs
       .uo_out (uo_out),   // Dedicated outputs
       .uio_in (uio_in),   // IOs: Input path
       .uio_out(uio_out),  // IOs: Output path
