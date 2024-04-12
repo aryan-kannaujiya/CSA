@@ -11,11 +11,11 @@ module tt_um_carry_select(
     input clk,
      input wire cin,
      output wire [3:0] S,
-     output reg cout
+     output wire cout
             );
         
 wire [3:0] temp0,temp1,carry0,carry1;
-assign cout = bitout;
+
 //for carry 0
 fulladder fa00(A[0],B[0],1'b0,temp0[0],carry0[0]);
 fulladder fa01(A[1],B[1],carry0[0],temp0[1],carry0[1]);
