@@ -5,7 +5,7 @@
 
 `define default_netname none
 
-module carry_select(  
+module tt_um_carry_select(  
     input wire [3:0] A,
      input wire [3:0] B,
      input wire cin,
