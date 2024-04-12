@@ -8,6 +8,7 @@
 module tt_um_carry_select(  
     input wire [3:0] A,
      input wire [3:0] B,
+    input clk
      input wire cin,
      output wire [3:0] S,
      output wire cout
