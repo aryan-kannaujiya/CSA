@@ -14,11 +14,11 @@ module tb ();
 
   // Wire up the inputs and outputs:
   reg clk;
-   reg [3:0] A;
-   reg [3:0] B;
-   reg [1:0] cin;
-   wire [3:0] S;
-   wire [1:0] cout;
+   reg [3:0] ui_io(A);
+   reg [3:0] ui_io(B);
+   reg [1:0] ui_io(cin);
+   wire [3:0] uo_out(S);
+   wire [1:0] uo_out(cout);
 
   // Replace tt_um_example with your module name:
   tt_um_carry_select user_project (
@@ -29,12 +29,12 @@ module tb ();
       .VGND(1'b0),
 `endif
 
-     .A,    // Dedicated inputs
-     .B,    // Dedicated inputs
-     .cin,    // Dedicated inputs
-     .cout,    // Dedicated inputs
-     .S,   // Dedicated outputs
-      .clk    (clk),      // clock
+     .ui_io(A),    // Dedicated inputs
+     .ui_io(B),    // Dedicated inputs
+     .ui_io(cin),    // Dedicated inputs
+     .uo_out(cout,    // Dedicated outputs
+     .uo_out(S),   // Dedicated outputs
+      .clk(clk),      // clock
   );
 
 endmodule
